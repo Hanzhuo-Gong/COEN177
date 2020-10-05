@@ -1,0 +1,18 @@
+#Name: Hanzhuo Gong
+#Date: 9/24/2020
+#Title: Lab1
+#Description: Calculate the area of the circle
+
+I found out interesting that $0 show me interesting result of how many lines that I have
+
+Executing Lab1.sh
+2 files
+      47 Lab1.sh
+      10 Lab1.txt
+      57 total
+
+The first time I ran the code. I got the message "Hi hanzhuo! There are 6 users logged on. Check who logged in".
+
+I realized the if statement the $user is not equal to my name, so I changed that to my name and the program start working. 
+
+After I added the code for the circle, The first time I ran and I got the error code that `expr is not an integer`. I realized I need to make some modification for the code. After I make some change, the code display the correct result that i wanted

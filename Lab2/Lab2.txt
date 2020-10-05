@@ -1,0 +1,21 @@
+# Name: Hanzhuo Gong
+# Date: 10/1/2020
+# Title: Lab2 Programming in C and use of Systems Calls
+# Description: This week lab includes processing and multithreading and system calls fork(), exit(), wait(), and exec()
+
+Step3: Segmentation fault: 11 because the code atoi(argv[1]) required one argument.
+
+Step4: with 3000 microseconds delay. The parent printed Parent Process, then Child printed Child process 0 and back to Parent to print Parent Process 1, but sometimes Parent or child will print process two more times before switch to other process.
+
+For 500, and 5000. I did not see a big difference compare to 3000. The process mostly are the same, some difference will be like 5000 had the Child process print Child process 0 and 1 before switch to Parent Process 1.
+
+
+
+Step 6:
+
+step3: Segmentation fault: 11
+Step4: similar to the result that I got. For 500 and 5000. I can see slightly time difference, which 500 is faster than 5000.
+
+
+ 
+ 

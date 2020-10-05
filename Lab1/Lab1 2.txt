@@ -1,0 +1,1 @@
+# Name: <your name> # Date: <date> (the day you have lab) # Title: Lab1 – task # Description: This program computes ... <you should # complete an appropriate description here.> 
