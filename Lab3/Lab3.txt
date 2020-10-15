@@ -1,0 +1,13 @@
+# Name: Hanzhuo Gong
+# Date: 10/8/2020
+# Title: Pthreads and inter-process Communication 
+# Description: Lab is practicing using pipe and Pthreads and inter-process Communication.
+
+Step 1:
+Step 1 shows the pipe of ls | more
+
+Step 2:
+Step 2 the upstream shows how many arguments the user passed, and downstream print out the command with all arguments.
+
+Step 6:
+Total of 10 threads + main thread has been created, the i was passed by address, so many of the i showed the same number.
