@@ -1,0 +1,12 @@
+Hanzhuo Gong
+Lab4
+10/15/2020
+
+Step 1:
+-In the execution of threadHello.c, I found out the hello thread number will be different each time I ran, all thread return will be display after the thread beeping created. However, if I run a game and run the command, the thread return will come before the all thread creations are done
+
+-Pre-thread, because the value got passed in by value and won't be affect outside the go() function
+
+-The i in main is allow pre-thread, because different threads will use a different i, and i won't be shared between each threads. The compiler store this value on the stack.
+
+Step 2: If I delete the second loop, some threads will be come after the "Main thread done". The reason is the thread does not join with the terminated thread.
