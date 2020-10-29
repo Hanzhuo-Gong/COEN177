@@ -1,0 +1,40 @@
+Set up No Machine
+1. go to this website to download the Nomachine under Preparation
+2. Download the file to connect with SCU account, the download file is under the line "Connecting".
+3. Double clicked the file you download under the "Connecting"
+4. On the first connect, the prompted trust will occured
+5. Enter the SCU account and password when prompted
+6  Select "Create a new GNOME virtual desktop"
+7. NX will display three hints(hepl) screens, click ok on each
+8. When the destop show up, you can resize the window by drag the edge
+
+Get start with Minix
+Open a terminal on the vitual machine and type the command belows.
+
+1. type $ setup vmware
+this will preapre the vmware to run.
+
+2.type $ minix-get-image
+This will COMPLETELY ERASE any old image, but when you run the first time, you need this command. 
+
+3. type $ vmware &
+This will boot up the software, It will take a while, so wait patiently.
+If you could not see the minix on the left(I didn't), follow the step below:
+Open a Virtual Machine -> "vm images" subfolder -> "minix3" subfolder => minix3.vmx.
+
+This will help you launch the minix3, when the minix3 prompted up, wait for it to boot up. It will take a while, then the system will ask you about the username, type "root"
+
+You can set up the password by type "passwd".
+
+Procedure for Lab 6:
+1.On the minix screen, not the terminal!. type cd /usr/src
+2. type ls to check the file, you should see kernel
+3. cd kernel
+4. ls   you will see all the file in kernel, you want to motified the main.c
+5. type vi main.c
+This will bring in to the file, you need to move down until you see the annouce.6. press "a" on the keyboard, which allow you to motified the file
+you can add whatever you want, I added a printf() line above the prinf() line talks about Minix.
+7. press "esc" on the keyboard, then press ":" and type "wq". Then press "enter". This will save and quit the file. If you make some mistakes press "esc", then type "q!". This will quit the file without make any motification.
+8. cd /usr/src    move back to this directory
+9. make world    this will recompile Minix, it will take some time, you will see a lot information coming out.
+10. reboot      to reboot the vitrual mechaine, and you should be able to see the change you made. DEMO to TA
