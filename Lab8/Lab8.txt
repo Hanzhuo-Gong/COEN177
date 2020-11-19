@@ -1,0 +1,146 @@
+Name: Hanzhuo Gong
+Data: 11/19/20
+Lab 8: Memory Management
+
+FIFO
+FIFO stands for first in first out, an algorthim replace the entry that has been in the cache the longest time
+
+LRU
+LRU stands for least recently used, an algorthim replace the cache entry that has not been used for the longest time in the past
+
+2nd Chance
+2nd Chance add a "second chance" bit to each memory frame, so if any replacement will check if the page, if the page have bit as 1, set the bit to 0 and skip the replacement. If a page with 0 bit, it will be replace.
+
+
+Result:
+FIFO 10K Test with cache size = 10, 50, 100, 250, 500
+    9918
+    9517
+    9020
+    7536
+    5132
+
+
+
+Second Chance 10K Test with cache size = 10, 50, 100, 250, 500
+    9917
+    9512
+    9024
+    7528
+    5180
+
+
+
+LRU 10K Test with cache size = 10, 50, 100, 250, 500
+   10002
+   10002
+   10002
+   10002
+   10002
+
+
+Hit Rate:
+10:
+FIFO
+Total Page Faults: 9916
+Total Request: 10000
+Hit Number is: 84
+hit rate is: 0.00840
+
+
+2nd Chance:
+Total Page Faults: 9915 
+Total Request: 10000
+Hit Number is: 85
+hit rate is: 0.00850
+
+LRU:
+Total Page Faults: 9915 
+Total Request: 10000
+Hit Number is: 85
+hit rate is: 0.00850
+
+
+50:
+FIFO
+Total Page Faults: 9515
+Total Request: 10000
+Hit Number is: 485
+hit rate is: 0.04850
+
+LRU
+Total Page Faults: 9510 
+Total Request: 10000
+Hit Number is: 490
+hit rate is: 0.04900
+
+2nd Chance
+Total Page Faults: 9510 
+Total Request: 10000
+Hit Number is: 490
+hit rate is: 0.04900
+
+
+
+100:
+FIFO
+Total Page Faults: 9018
+Total Request: 10000
+Hit Number is: 982
+hit rate is: 0.09820
+
+LRU
+Total Page Faults: 9029 
+Total Request: 10000
+Hit Number is: 971
+hit rate is: 0.09710
+
+2nd Chance
+Total Page Faults: 9022
+Total Request: 10000
+Hit Number is: 978
+hit rate is: 0.09780
+
+
+
+250:
+FIFO
+Total Page Faults: 7534
+Total Request: 10000
+Hit Number is: 2466
+hit rate is: 0.24660
+
+LRU
+Total Page Faults: 7532 
+Total Request: 10000
+Hit Number is: 2468
+hit rate is: 0.24680
+
+2nd Chance
+Total Page Faults: 7526 
+Total Request: 10000
+Hit Number is: 2474
+hit rate is: 0.24740
+
+
+
+500:
+FIFO
+Total Page Faults: 5130
+Total Request: 10000
+Hit Number is: 4870
+hit rate is: 0.48700
+
+LRU:
+Total Page Faults: 5206 
+Total Request: 10000
+Hit Number is: 4794
+hit rate is: 0.47940
+
+2nd Chance
+Total Page Faults: 5178
+Total Request: 10000
+Hit Number is: 4822
+hit rate is: 0.48220
+
+I did not see a huge hit rate difference between three of the algorithms.
